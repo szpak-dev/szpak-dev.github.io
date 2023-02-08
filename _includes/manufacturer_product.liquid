@@ -1,0 +1,36 @@
+{% assign manufacturer_id = page.categories[0] %}
+{% assign manufacturer = site.data.manufacturers[manufacturer_id] %}
+
+{% assign product_id = page.title | downcase %}
+{% assign product = manufacturer.products[product_id] %}
+
+<div class="manufacturer-product">
+    <h1>{{ product.name }}</h1>
+    <img src="{{ product.img_url }}" alt="Image of {{ product.name }}"/>
+    <table class="table">
+        <thead>
+            <th>Cecha 1</th>
+            <th>Cecha 2</th>
+            <th>Cecha 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wartość 1</td>
+                <td>Wartość 2</td>
+                <td>Wartość 3</td>
+            </tr>
+            <tr>
+                <td>Wartość 1</td>
+                <td>Wartość 2</td>
+                <td>Wartość 3</td>
+            </tr>
+            <tr>
+                <td>Wartość 1</td>
+                <td>Wartość 2</td>
+                <td>Wartość 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Opis</h2>
+    <p>opis opis opis</p>
+</div>

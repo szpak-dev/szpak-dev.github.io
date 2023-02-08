@@ -1,0 +1,12 @@
+<div class="tj-card {% if include.horizontal == 1 %}horizontal{% endif %}">
+    <img src="{{ include.img_url }}" alt="card image">
+    <div class="tj-card-body">
+        <h3>
+            {% if include.target_url.size > 0 %}
+                <a href="{{ include.target_url }}">{{ include.title }}</a>
+            {% else %}
+                {{ include.title }}
+            {% endif %}
+        </h3>
+    </div>
+</div>

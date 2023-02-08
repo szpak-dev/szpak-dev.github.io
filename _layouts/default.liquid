@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl">
+{% include head.liquid %}
+<body>
+    <article>
+        {% include nav.liquid %}
+        <main class="overflow-x-auto">
+            {{ content }}
+        </main>
+        {% include footer.liquid %}
+    </article>
+    <script src="/assets/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% assign manufacturer_id = include.manufacturer_id %}
+{% assign product_id = include.product_id %}
+{% assign product = include.product %}
+
+{% assign path = manufacturer_id | append: '/product' %}
+{% assign product_file_path = '_posts/' | append: path %}
+{% assign product_filename = '/2023-01-01-' | append: product_id | append: '.markdown' %}
+{% assign product_file_abs = product_file_path | append: product_filename %}
+
+{% capture url %}{% link {{ product_file_abs }} %}{% endcapture %}
+{{ url | append: '.html' }}

@@ -1,0 +1,19 @@
+{% assign horizontal = include.horizontal %}
+{% unless horizontal %}{% assign horizontal = 0 %}{% endunless %}
+
+{% assign target_url = include.target_url %}
+{% unless target_url %}{% assign target_url = '' %}{% endunless %}
+
+{% assign img_url = include.product.img_url %}
+{% unless img_url %}{% assign img_url = '/' %}{% endunless %}
+
+{% assign title = include.product.name %}
+{% unless title %}{% assign title = '' %}{% endunless %}
+
+{% include
+    tj_card.liquid
+    horizontal = horizontal
+    img_url = img_url
+    target_url = target_url
+    title = title
+%}

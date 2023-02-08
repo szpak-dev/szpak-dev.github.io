@@ -1,0 +1,14 @@
+exposed:
+  - ['marttiini', '001']
+  - ['marttiini', '002']
+
+promoted:
+  - ['plano', '001']
+  - ['plano', '002']
+  - ['plano', '003']
+
+significant:
+  - ['plano', '001']
+  - ['plano', '002']
+  - ['plano', '003']
+  - ['marttiini', '002']

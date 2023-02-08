@@ -1,0 +1,23 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+
+        {% for man_prod in site.data.front_page.exposed %}
+            {% assign manufacturer = man_prod[0] %}
+            {% assign product_id = man_prod |  join: '' %}
+            {% assign product = site.data.manufacturers[manufacturer].products[product_id] %}
+
+            <div class="carousel-item{% if forloop.index0 == 0 %} active{% endif %}">
+                <img src="{{ product.img_url }}" class="d-block img-fluid mx-auto" alt="exposed">
+            </div>
+        {% endfor %}
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

@@ -1,0 +1,26 @@
+{% assign manufacturer = site.data.manufacturers[include.manufacturer_id] %}
+
+<img
+    class="manufacturer-logotype"
+    src="{{ manufacturer.logo_url }}"
+    alt="{{ manufacturer.name }} logotype"
+/>
+
+<h2>Kategorie Produktów</h2>
+
+<div class="manufacturer-categories">
+    {% for cat in manufacturer.categories %}
+        {% assign category_id = cat[0] %}
+        {% assign category = cat[1] %}
+
+        {% assign img_url = category.img_url %}
+        {% assign title = category.name %}
+        {% assign target_url = include.manufacturer_id | append: '/category/' | append: category_id | append: '.html' %}
+
+        {% include
+            tj_card_category.liquid
+            category = category
+            target_url = target_url
+        %}
+    {% endfor %}
+</div>

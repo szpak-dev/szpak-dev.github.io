@@ -1,0 +1,47 @@
+marttiini:
+  name: MARTTIINI
+  logo_url: /media/marttiini_logo.svg
+  categories:
+    tra:
+      name: Traditional
+      img_url: https://via.placeholder.com/1600x900/09f/fff?text=Traditional
+    out:
+      name: Outdoor
+      img_url: https://via.placeholder.com/1600x900/09f/fff?text=Outdoor
+  products:
+    marttiini001:
+      name: Carbon Lapp Knife
+      category: tra
+      img_url: https://via.placeholder.com/1600x900/09f/fff?text=marttiini001
+    marttiini002:
+      name: Lynx Black Edition
+      category: tra
+      img_url: https://via.placeholder.com/1600x900/09f/fff?text=marttiini002
+    marttiini003:
+      name: AAPA
+      category: out
+      img_url: https://via.placeholder.com/1600x900/09f/fff?text=marttiini003
+
+plano:
+  name: PLANO
+  logo_url: /media/plano_logo.svg
+  categories:
+    kit:
+      name: Kitchen
+      img_url: https://via.placeholder.com/1600x900/040/fff?text=Kitchen
+    ind:
+      name: Indoor
+      img_url: https://via.placeholder.com/1600x900/040/fff?text=Indoor
+  products:
+    plano001:
+      name: Texas Killer
+      category: kit
+      img_url: https://via.placeholder.com/1600x900/040/fff?text=plano001
+    plano002:
+      name: Lynx Red Edition
+      category: ind
+      img_url: https://via.placeholder.com/1600x900/040/fff?text=plano002
+    plano003:
+      name: IPPA
+      category: ind
+      img_url: https://via.placeholder.com/1600x900/040/fff?text=plano003
