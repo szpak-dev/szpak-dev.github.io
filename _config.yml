@@ -12,12 +12,12 @@ facebook_profile: ''
 instagram_profile: ''
 
 collections:
-  pages:
+  categories:
     output: true
-    permalink: "/:name"
-  posts:
+    permalink: "/categories/:slug"
+  products:
     output: true
-    permalink: "/:categories/:slug"
+    permalink: "/products/:slug"
 
 
 # Build settings

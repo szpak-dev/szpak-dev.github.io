@@ -14,10 +14,10 @@
             {% if product.category == category_id %}
                 {% capture target_url %}
                     {% include
-                            proc/product_target_url.liquid
-                            manufacturer_id = manufacturer_id
-                            product_id = product_id
-                            product = product
+                        proc/product_target_url.liquid
+                        manufacturer_id = manufacturer_id
+                        product_id = product_id
+                        product = product
                     %}
                 {% endcapture %}
 
