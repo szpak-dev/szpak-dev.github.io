@@ -1,4 +1,2 @@
-{% assign category_id = include.category_id %}
-{% assign file = '_categories/2023-01-01-' | append: category_id | append: '.markdown' %}
-
-{% link {{ file }} %}
+{% assign url = '/categories/' | append: include.category_id | append: '.html' %}
+{{ url }}

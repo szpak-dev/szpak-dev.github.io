@@ -1,4 +1,2 @@
-{% assign product_id = include.product_id %}
-{% assign file = '_products/2023-01-01-' | append: product_id | append: '.markdown' %}
-
-{% link {{ file }} %}
+{% assign url = '/products/' | append: include.product_id | append: '.html' %}
+{{ url }}
