@@ -20,14 +20,13 @@ collections:
     permalink: "/products/:slug"
 
 
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
 exclude:
    - vendor # fix for some old bug
-   - .jekyll-cache/
+   - .jekyll-cache
    - tj*
    - package.json
    - yarn.lock
