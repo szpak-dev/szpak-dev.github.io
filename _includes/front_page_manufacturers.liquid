@@ -1,0 +1,8 @@
+{% for man in site.data.manufacturers %}
+    {% assign manufacturer_id = man[0] %}
+    {% assign manufacturer_url = '/' | append: manufacturer_id | append: '.html' %}
+    {% assign manufacturer = man[1] %}
+    <a href="{{ manufacturer_url }}">
+        <img src="{{ manufacturer.logo_url }}" alt="{{ manufacturer_id }} logotype"/>
+    </a>
+{% endfor %}

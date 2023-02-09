@@ -12,12 +12,12 @@ facebook_profile: ''
 instagram_profile: ''
 
 collections:
-  pages:
+  categories:
     output: true
-    permalink: "/:name"
-  posts:
+    permalink: "/categories/:slug"
+  products:
     output: true
-    permalink: "/:categories/:slug"
+    permalink: "/products/:slug"
 
 
 # Build settings
@@ -27,3 +27,20 @@ plugins:
 
 exclude:
    - .jekyll-cache/
+   - tj*
+   - package.json
+   - yarn.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "default"

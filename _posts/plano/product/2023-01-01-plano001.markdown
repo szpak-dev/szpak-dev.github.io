@@ -1,5 +1,0 @@
----
-layout: default
-categories: ["plano", "product"]
----
-{% include manufacturer_product.liquid page = page %}

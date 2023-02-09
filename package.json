@@ -1,0 +1,17 @@
+{
+  "name": "tomjanjekyll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:szpak-dev/tomjan.git",
+  "author": "Tomasz Szpak <tomszp@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "scripts": {
+    "install_views": "node tj_install_views.js",
+    "build_database": "node tj_build_database.js"
+  }
+}

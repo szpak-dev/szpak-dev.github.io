@@ -1,5 +1,0 @@
----
-layout: default
-categories: ["marttiini", "product"]
----
-{% include manufacturer_product.liquid page = page %}

@@ -4,3 +4,6 @@ _site
 .jekyll-metadata
 vendor
 .idea
+node_modules
+_categories/*
+_products/*

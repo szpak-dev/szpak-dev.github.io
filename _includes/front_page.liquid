@@ -1,8 +1,18 @@
 <style>
-    .promoted {
+    .manufacturers {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
         grid-gap: 1rem;
+    }
+
+    .manufacturers a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .manufacturers img {
+        width: 60%;
     }
 
     .significant {
@@ -12,13 +22,22 @@
     }
 </style>
 
-<h1>Tomasz Jantos</h1>
-<section>
+<section class="welcome">
+    <h1>Tomasz Jantos</h1>
+    <p>
+        Witam Państwa na mojej stronie oraz dziękuję za zainteresowanie moją ofertą.
+        Moje motto brzmi: "Moje noże są ostre a klientów nie nacinam". Zapraszam czym chata bogata.
+    </p>
+</section>
+
+<section class="exposed">
     {% include front_page_exposed.liquid %}
 </section>
-<section class="promoted">
-    {% include front_page_promoted.liquid %}
+
+<section class="manufacturers">
+    {% include front_page_manufacturers.liquid %}
 </section>
+
 <section class="significant">
     {% include front_page_significant.liquid %}
 </section>
