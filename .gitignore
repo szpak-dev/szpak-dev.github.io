@@ -5,5 +5,3 @@ _site
 vendor
 .idea
 node_modules
-_categories/*
-_products/*
