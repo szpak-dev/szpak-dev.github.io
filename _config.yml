@@ -30,6 +30,9 @@ exclude:
    - tj*
    - package.json
    - yarn.lock
+   - node_modules
+   - Makefile
+   - Gem*
 
 defaults:
   -

@@ -15,7 +15,13 @@
 
         {% assign img_url = category.img_url %}
         {% assign title = category.name %}
-        {% assign target_url = include.manufacturer_id | append: '/category/' | append: category_id | append: '.html' %}
+
+        {% capture target_url %}
+            {% include
+                proc/category_target_url.liquid
+                category_id = category_id
+            %}
+        {% endcapture %}
 
         {% include
             tj_card_category.liquid
