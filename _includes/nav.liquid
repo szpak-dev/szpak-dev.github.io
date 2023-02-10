@@ -1,33 +1,59 @@
+<style>
+    header {
+        background-color: rgb(248, 249, 250);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul.nav-list {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    ul.nav-list li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    ul.nav-list li i {
+        /*margin: 0 0.5rem 0 1rem;*/
+    }
+
+    ul.nav-list li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    ul.nav-list li a:active + i {
+        color: red;
+    }
+</style>
 <header>
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="https://via.placeholder.com/50x50.png?text=Logo" alt="Logo" />
-            </a>
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O Firmie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Partnerzy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Do Pobrania</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+        <a href="/">
+            <img src="https://via.placeholder.com/50x50.png?text=Logo" alt="Logo" />
+        </a>
+        <ul class="flex-ul tj-row nav-list">
+            <li>
+                <i class="bi bi-globe2"></i>
+                <a href="/marttiini.html">O Firmie</a>
+            </li>
+            <li>
+                <i class="bi bi-people"></i>
+                <a href="/plano.html">Partnerzy</a>
+            </li>
+            <li>
+                <i class="bi bi-cloud-arrow-down"></i>
+                <a href="#">Do Pobrania</a>
+            </li>
+        </ul>
     </nav>
 </header>

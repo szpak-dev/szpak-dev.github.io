@@ -2,7 +2,7 @@ import {writeFile} from "fs";
 
 const filename = id => `2023-01-01-${id}.markdown`;
 
-const clear_template = template => template.trim().replace('\t','')
+const clear_template = t => t.trim().replace('\t','')
 
 const store_file = (abs_filename, content) => {
     writeFile(abs_filename, content, e => {
